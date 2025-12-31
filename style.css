@@ -1,0 +1,182 @@
+/* =========================
+   COLOR VARIABLES
+========================= */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --background-color: #cfeef7;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1, h2 {
+  color: var(--primary-color);
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-content img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skills-container {
+  display: flex;
+  gap: 80px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+#contact {
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* =========================
+   DARK MODE
+========================= */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p,
+.dark-mode label {
+  color: #ffffff;
+}
+
+.dark-mode #contact {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.dark-mode button {
+  background-color: #444;
+}
